@@ -1,6 +1,4 @@
-# Project Title
-
-RESTfull API TEST
+# RESTfull API TEST
 
 #Technology Stack
 The project uses the following technologies: <br/>
