@@ -1,4 +1,4 @@
-# RESTfull API TEST
+# RESTful API TEST
 
 # Technology Stack
 The project uses the following technologies: <br/>
