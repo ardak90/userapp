@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.*;
  */
 
 @RestController
-@RequestMapping(value = "/user")
+@RequestMapping(value = "/users")
 public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(value = "user/", method = RequestMethod.POST)
     public ResponseEntity persistUser(@RequestBody UserDto userDto){
 
         UserDto user = userService.persistUser(userDto);
@@ -27,7 +27,7 @@ public class UserController {
         return new ResponseEntity(HttpStatus.BAD_REQUEST);
     }
 
-    @RequestMapping(value = "/{userId}", method = RequestMethod.GET)
+    @RequestMapping(value = "user/{userId}", method = RequestMethod.GET)
     public ResponseEntity findByUserId(@PathVariable String userId){
 
         UserDto user = userService.findByUserId(userId);

@@ -12,9 +12,6 @@ import java.io.Serializable;
 @Table(name="app_user")
 public class User implements Serializable {
 
-
-
-
     @Id
     @Column(name="ID_")
     @GeneratedValue(strategy=GenerationType.IDENTITY)

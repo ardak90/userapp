@@ -21,7 +21,7 @@ public class StatusController {
     @Autowired
     private StatusService statusService;
 
-    @RequestMapping(value = "/{status}/{userId}", method = RequestMethod.POST)
+    @RequestMapping(value = "/{status}/{userId}", method = RequestMethod.GET)
     public ResponseEntity persistStatus(@PathVariable String status, @PathVariable String userId){
         StatusDto s = statusService.persistStatus(status, userId);
         if(s!=null){
