@@ -1,6 +1,6 @@
 # RESTfull API TEST
 
-#Technology Stack
+# Technology Stack
 The project uses the following technologies: <br/>
 - **Java Version**: 1.8
 - **web/REST**: [Spring](http://www.springsource.org/) 4.3.11 <br/>
